@@ -4,12 +4,7 @@ Deface::Override.new(
   insert_after: "ul#sidebarProduct",
   text: "
     <ul class='nav nav-sidebar border-bottom' id='sidebarSubscriptionConfig'>
-      <%= main_menu_tree(
-        'Subscription Configs',
-        icon: 'products.svg',
-        sub_menu: 'subscription_config',
-        url: admin_subscription_configs_path)
-      %>
+      <%= tab 'Subscription Configs', url: spree.admin_subscription_configs_path, icon: 'products.svg' %>
     </ul>
   "
 )
