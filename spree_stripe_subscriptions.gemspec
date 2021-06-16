@@ -8,12 +8,12 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_stripe_subscriptions'
   s.version     = SpreeStripeSubscriptions.version
-  s.summary     = 'Add extension summary here'
+  s.summary     = 'Spree Extenstion for displaying and managing Stripe subscriptions.'
   s.description = 'Add (optional) extension description here'
   s.required_ruby_version = '>= 2.5'
 
-  s.author    = 'You'
-  s.email     = 'you@example.com'
+  s.author    = 'Daniyal Basit'
+  s.email     = 'dbk590@gmail.com'
   s.homepage  = 'https://github.com/your-github-handle/spree_stripe_subscriptions'
   s.license = 'BSD-3-Clause'
 
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_api', spree_version
   s.add_dependency 'spree_backend', spree_version
+  s.add_dependency 'spree_admin', spree_version
   s.add_dependency 'spree_extension'
 
   s.add_development_dependency 'spree_dev_tools'
