@@ -1,4 +1,4 @@
-class CreateSpreeSubscriptionConfig < SpreeExtension::Migration
+class CreateSpreeSubscriptionConfigs < SpreeExtension::Migration
   def change
     create_table :spree_subscription_configs do |t|
       t.integer :max_subscribers
