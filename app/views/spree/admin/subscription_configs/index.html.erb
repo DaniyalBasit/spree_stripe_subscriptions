@@ -20,10 +20,11 @@
           <% end %>
         </div>
 
-        <div data-hook="admin_subscription_config_edit_form_button">
-          <%= render partial: 'spree/admin/shared/edit_resource_links', locals: { collection_url: spree.admin_subscription_configs_url } %>
-        </div>
       </div>
     <% end %>
+
+    <div data-hook="admin_subscription_config_edit_form_button">
+      <%= render partial: 'spree/admin/shared/edit_resource_links', locals: { collection_url: spree.admin_subscription_configs_url } %>
+    </div>
   </div>
 </div>
