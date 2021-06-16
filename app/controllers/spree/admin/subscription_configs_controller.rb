@@ -6,7 +6,15 @@ module Spree
       end
 
       def update
-        puts params
+        @config = Spree::SubscriptionConfig.find_by(id: params[:id])
+        @config.update(config_params)
+        render :index
+      end
+
+      private
+
+      def config_params
+        params.require(:subscription_config).permit(:max_subscribers)
       end
     end
   end
